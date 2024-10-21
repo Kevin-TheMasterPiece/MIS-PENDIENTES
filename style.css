@@ -1,0 +1,89 @@
+/* Estilo general */
+body {
+    background-color: #f0f4f8;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Contenedor principal */
+  .contenedor {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 300px;
+  }
+  
+  /* Títulos */
+  h1, h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Lista de pendientes */
+  .checklist {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  .checklist li {
+    margin: 10px 0;
+  }
+  
+  /* Formularios */
+  .formulario {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .formulario input {
+    flex: 1;
+    padding: 8px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .formulario button {
+    padding: 8px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .formulario button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Mensaje de victoria */
+  #animacion-victoria {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #4caf50;
+    animation: aparecer 1s ease-in-out forwards;
+  }
+  
+  .oculto {
+    display: none;
+  }
+  
+  @keyframes aparecer {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  

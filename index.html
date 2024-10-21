@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checklist de Pendientes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Mis Pendientes</h1>
+    
+    <h2>Pendientes Diarios</h2>
+    <form id="form-diarios" class="formulario">
+        <input type="text" id="input-diario" placeholder="Agregar tarea diaria" required>
+        <button type="submit">Agregar</button>
+      </form>
+    <ul id="lista-diarios" class="checklist"></ul>
+    
+
+    <h2>Pendientes Semanales</h2>
+    <form id="form-semanales" class="formulario">
+        <input type="text" id="input-semanal" placeholder="Agregar tarea semanal" required>
+        <button type="submit">Agregar</button>
+      </form>
+    <ul id="lista-semanales" class="checklist"></ul>
+    
+
+    <div id="animacion-victoria" class="oculto">
+      🎉 ¡Todos los pendientes diarios completados! 🎉
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
